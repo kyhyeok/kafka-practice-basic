@@ -1,0 +1,47 @@
+# Gradle
+.gradle/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# Spring / Gradle wrapper artifacts
+HELP.md
+
+# 민감 설정 (prod 전용 값)
+application-prod.yml
+application-prod.yaml
+*.env
+.env
+.env.local
+
+# 로그
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# OMC
+.omc/
+
+# 전역 gitignore(~/.gitignore_global)가 docker-compose.yml을 제외시키므로
+# 이 저장소에서는 명시적으로 다시 포함시킴
+!producer/docker-compose.yml
