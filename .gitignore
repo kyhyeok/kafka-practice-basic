@@ -42,6 +42,9 @@ Thumbs.db
 # OMC
 .omc/
 
+# Serena
+.serena/
+
 # 전역 gitignore(~/.gitignore_global)가 docker-compose.yml을 제외시키므로
 # 이 저장소에서는 명시적으로 다시 포함시킴
 !producer/docker-compose.yml
