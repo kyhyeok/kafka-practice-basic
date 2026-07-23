@@ -21,8 +21,8 @@ public class ProducerService {
             System.out.println(dto);
             String memberData = objectMapper.writeValueAsString(dto);
             kafkaTemplate.send("member-topic", memberData);
-            String orderData = "{ \"productId\": 101,\"productName\": \"게이밍 마우스\",\"quantity\": 3}";
-            kafkaTemplate.send("order-topic", orderData);
+//            String orderData = "{ \"productId\": 101,\"productName\": \"게이밍 마우스\",\"quantity\": 3}";
+//            kafkaTemplate.send("order-topic", orderData);
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }

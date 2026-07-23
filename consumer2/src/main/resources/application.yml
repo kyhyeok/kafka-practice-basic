@@ -12,4 +12,4 @@ spring:
 #      member-topic-static-group-id: member-topic-static-group
 #      테스트3. auto-offset-reset설정 : 컨슈머그룹ID가 다를때 earliest는 과거의 메시지까지, latest는 최신의 메시지만
       member-topic-static-group-id: member-topic-static-group2
-      auto-offset-reset: latest
+      auto-offset-reset: earliest
